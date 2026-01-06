@@ -1,0 +1,16 @@
+[package]
+name = "zshleyp/inputservice"
+description = "Remote event wrapper with automatic buffering"
+license = "MIT"
+authors = ["zshleyp"]
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+exclude = ["**"]
+include = ["src", "src/*", "default.project.json", "wally.lock", "wally.toml", "LICENSE"]
+
+[dependencies]
+Signal = "sleitnick/signal@2.0.3"
+Sift = "csqrl/sift@0.0.11"
+Remote = "zshleyp/remote@0.1.1"
