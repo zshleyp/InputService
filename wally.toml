@@ -1,9 +1,9 @@
 [package]
 name = "zshleyp/inputservice"
-description = "Remote event wrapper with automatic buffering"
+description = "Easy input handling"
 license = "MIT"
 authors = ["zshleyp"]
-version = "0.1.0"
+version = "0.1.2"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 

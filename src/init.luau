@@ -16,7 +16,6 @@ local Sift = require(Packages.Sift)
 
 local InputEvent = Remote.new("Input", false)
 local SetMappingEvent = Remote.new("SetMappings", false)
-local CamCFrameEvent = Remote.new("PlayerInfo", false)
 
 local IsServer = RunService:IsServer()
 
@@ -77,11 +76,6 @@ function module.Init(self: InputService, mappings: Mappings)
 
 		InputEvent.OnFired:Connect(function(plr: Player, input: string, state: boolean)
 			HandleAction(plr, input, state)
-		end)
-
-		CamCFrameEvent.OnFired:Connect(function(plr: Player, cframe: CFrame)
-			--add sanity check later zzz
-			plr:SetAttribute("Camera", cframe)
 		end)
 	else
 		--local InitialMappings =
